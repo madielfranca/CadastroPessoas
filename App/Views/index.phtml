@@ -19,7 +19,9 @@
             Selecione a pessoa:
             <select id="pessoas">
                 <option value="0"> Selecione</option>
-                <option value="0">Colocar as Pessoas aqui</option>
+                <?php foreach ($pessoas as $key => $pessoa): ?>
+                <option><?=$pessoas[$key]->nome ?></option>
+                <?php endforeach;?>
             </select>
 
         </div>
